@@ -11,6 +11,7 @@ Most entries are powered by [yt-dlp](https://github.com/yt-dlp/yt-dlp) under the
 - [Android apps](#android-apps)
 - [Browser extensions and userscripts](#browser-extensions-and-userscripts)
 - [Self-hosted](#self-hosted)
+- [Telegram bots](#telegram-bots)
 
 ## Cross-platform desktop GUIs
 
@@ -98,3 +99,7 @@ _Things you run on a server: web UIs, REST APIs, Docker images, scheduled archiv
 - [TechSquidTV/Hermes](https://github.com/TechSquidTV/Hermes) - Hermes Video Downloader — Self-hosted video downloader compatible with 1,000+ sites.
 - [kisugez/facebook-video-downloader](https://github.com/kisugez/facebook-video-downloader) - A modern web application that allows users to download videos from Facebook by providing the video URL. Built with FastAPI backend and Next.js frontend.
 - [jordanshatford/youtube-downloader](https://github.com/jordanshatford/youtube-downloader) - Fast, high quality YouTube downloads.
+
+## Telegram bots
+
+- [Cyber Collector](https://t.me/cybercollectorbot) - Telegram bot for downloading videos from TikTok (no watermark), Instagram Reels/Stories, YouTube Shorts, X/Twitter and Facebook. Free, no signup required.
