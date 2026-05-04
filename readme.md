@@ -40,17 +40,17 @@ Every cross-platform desktop GUI on the list, ranked by total features and annot
 | # | Project | ⭐ | Stack | Platforms | License | Distribution | Score | Headline traits |
 |---:|---|---:|---|---|---|---|---|---|
 | 1 | [youwee](https://github.com/vanloctech/youwee) | 790 | Tauri | 🪟 🍎 🐧 | MIT | GitHub | **21** · S2 D5 Q4 Su3 A4 Au3 | RSS auto · Whisper subs · AI summary · cookie-free |
-| 2 | [GDownloader](https://github.com/hstr0100/GDownloader) | 181 | Java/Swing | 🪟 🍎 🐧 | GPL-3.0 | GitHub | **18** · S4 D4 Q4 Su1 A3 Au2 | clipboard-first · 3 downloaders (yt-dlp + gallery-dl + spotDL) · HW transcoding |
-| 3 | [yt-dlp-gui (imsyy)](https://github.com/imsyy/yt-dlp-gui) | 42 | Tauri | 🪟 🍎 🐧 | MIT | GitHub | **18** · S2 D6 Q3 Su3 A4 Au0 | bilingual subs merge · HDR aware · cookie-free |
-| 4 | [neodlp](https://github.com/neosubhamoy/neodlp) | 337 | Tauri | 🪟 🍎 🐧 | MIT | Winget · Homebrew · Flathub | **17** · S2 D4 Q4 Su1 A5 Au1 | bundled bgutil-pot · 5/5 auth options · browser extension |
-| 5 | [Parabolic](https://github.com/NickvisionApps/Parabolic) | 5659 | .NET native | 🪟 🍎 🐧 | MIT | Flathub · GitHub | **16** · S2 D5 Q3 Su4 A1 Au1 | 4-mode subs · GTK4 + WinUI native · batch URL list |
-| 6 | [YTSage](https://github.com/oop7/YTSage) | 3632 | Python/PySide6 | 🪟 🍎 🐧 | MIT | PyPI · GitHub | **16** · S1 D6 Q2 Su2 A5 Au0 | pip-installable · EBU R128 audio · HDR aware · cookie-free |
-| 7 | [comine](https://github.com/nichind/comine) | 144 | Tauri | 🪟 🍎 🐧 🤖 | GPL-3.0 | GitHub | **15** · S4 D5 Q1 Su1 A2 Au2 | Android target · Discord RPC · multi-backend |
-| 8 | [ytget-gui](https://github.com/ErfanNamira/ytget-gui) | 39 | Python/PyQt | 🪟 🍎 🐧 | MIT | PyPI · GitHub | **14** · S1 D5 Q4 Su1 A3 Au0 | pip-installable · retry config · 5/7 download options |
-| 9 | [ytDownloader](https://github.com/aandrew-me/ytDownloader) | 9475 | Electron | 🪟 🍎 🐧 | GPL-3.0 | Scoop · Winget · Chocolatey | **13** · S2 D4 Q3 Su1 A3 Au0 | built-in video compressor · Scoop · Winget · Chocolatey |
-| 10 | [varia](https://github.com/giantpinkrobots/varia) | 1656 | Python/GTK | 🪟 🍎 🐧 | MPL-2.0 | Flathub · AUR · Snap | **13** · S3 D4 Q0 Su0 A3 Au3 | download scheduler · sleep-on-completion · GTK native |
-| 11 | [Aither-Download-Manager](https://github.com/NoahMustafa/Aither-Download-Manager) | 22 | Tauri | 🪟 | none | GitHub | **13** · S3 D4 Q2 Su0 A2 Au2 | in-page browser overlay · 16 UI languages |
-| 12 | [Arroxy](https://github.com/antonio-orionus/Arroxy) | 2 | Electron | 🪟 🍎 🐧 | MIT | Winget · Scoop · Homebrew · Flatpak | **13** · S1 D3 Q2 Su4 A2 Au1 | 4-mode subs · clipboard watch · auto-clean URLs · hidden-window anti-bot |
+| 2 | [Arroxy](https://github.com/antonio-orionus/Arroxy) | 2 | Electron | 🪟 🍎 🐧 | MIT | Winget · Scoop · Homebrew · Flatpak | **19** · S1 D3 Q5 Su4 A4 Au2 | 4-mode subs · metadata+thumbnail embed · proxy · cookies.txt · system tray · clipboard watch |
+| 3 | [GDownloader](https://github.com/hstr0100/GDownloader) | 181 | Java/Swing | 🪟 🍎 🐧 | GPL-3.0 | GitHub | **18** · S4 D4 Q4 Su1 A3 Au2 | clipboard-first · 3 downloaders (yt-dlp + gallery-dl + spotDL) · HW transcoding |
+| 4 | [yt-dlp-gui (imsyy)](https://github.com/imsyy/yt-dlp-gui) | 42 | Tauri | 🪟 🍎 🐧 | MIT | GitHub | **18** · S2 D6 Q3 Su3 A4 Au0 | bilingual subs merge · HDR aware · cookie-free |
+| 5 | [neodlp](https://github.com/neosubhamoy/neodlp) | 337 | Tauri | 🪟 🍎 🐧 | MIT | Winget · Homebrew · Flathub | **17** · S2 D4 Q4 Su1 A5 Au1 | bundled bgutil-pot · 5/5 auth options · browser extension |
+| 6 | [Parabolic](https://github.com/NickvisionApps/Parabolic) | 5659 | .NET native | 🪟 🍎 🐧 | MIT | Flathub · GitHub | **16** · S2 D5 Q3 Su4 A1 Au1 | 4-mode subs · GTK4 + WinUI native · batch URL list |
+| 7 | [YTSage](https://github.com/oop7/YTSage) | 3632 | Python/PySide6 | 🪟 🍎 🐧 | MIT | PyPI · GitHub | **16** · S1 D6 Q2 Su2 A5 Au0 | pip-installable · EBU R128 audio · HDR aware · cookie-free |
+| 8 | [comine](https://github.com/nichind/comine) | 144 | Tauri | 🪟 🍎 🐧 🤖 | GPL-3.0 | GitHub | **15** · S4 D5 Q1 Su1 A2 Au2 | Android target · Discord RPC · multi-backend |
+| 9 | [ytget-gui](https://github.com/ErfanNamira/ytget-gui) | 39 | Python/PyQt | 🪟 🍎 🐧 | MIT | PyPI · GitHub | **14** · S1 D5 Q4 Su1 A3 Au0 | pip-installable · retry config · 5/7 download options |
+| 10 | [ytDownloader](https://github.com/aandrew-me/ytDownloader) | 9475 | Electron | 🪟 🍎 🐧 | GPL-3.0 | Scoop · Winget · Chocolatey | **13** · S2 D4 Q3 Su1 A3 Au0 | built-in video compressor · Scoop · Winget · Chocolatey |
+| 11 | [varia](https://github.com/giantpinkrobots/varia) | 1656 | Python/GTK | 🪟 🍎 🐧 | MPL-2.0 | Flathub · AUR · Snap | **13** · S3 D4 Q0 Su0 A3 Au3 | download scheduler · sleep-on-completion · GTK native |
+| 12 | [Aither-Download-Manager](https://github.com/NoahMustafa/Aither-Download-Manager) | 22 | Tauri | 🪟 | none | GitHub | **13** · S3 D4 Q2 Su0 A2 Au2 | in-page browser overlay · 16 UI languages |
 | 13 | [streamfetch](https://github.com/Shripad735/streamfetch) | 29 | Electron | 🪟 🍎 🐧 | MIT | GitHub | **12** · S2 D5 Q2 Su0 A2 Au1 | turbo mode · clip studio |
 | 14 | [mediaharbor](https://github.com/MediaHarbor/mediaharbor) | 161 | Electron | 🪟 🍎 🐧 | GPL-3.0 | MS Store · GitHub | **12** · S2 D4 Q3 Su1 A2 Au0 | native Tidal / Qobuz / Deezer clients · built-in player |
 | 15 | [Pulsar](https://github.com/FuzjaJadrowa/Pulsar) | 53 | Tauri | 🪟 🍎 🐧 | GPL-3.0 | Flathub · GitHub | **12** · S2 D3 Q2 Su2 A2 Au1 | preset system · video converter mode |
