@@ -40,7 +40,7 @@ Every cross-platform desktop GUI on the list, ranked by total features and annot
 
 | # | Project | ⭐ | Stack | Platforms | License | Distribution | Score | Headline traits |
 |---:|---|---:|---|---|---|---|---|---|
-| 1 | [Arroxy](https://github.com/antonio-orionus/Arroxy) | 2 | Electron | 🪟 🍎 🐧 | MIT | Winget · Scoop · Homebrew · Flatpak | **22** · S2 D6 Q5 Su3 A4 Au2 | bulk URL queue · speed limit + pacing · playlist sync/M3U · 4-mode subs · metadata + thumbnail embed · tray + clipboard watch |
+| 1 | [Arroxy](https://github.com/antonio-orionus/Arroxy) | 193 | Electron | 🪟 🍎 🐧 | MIT | Winget · Scoop · Homebrew · Flatpak | **22** · S2 D6 Q5 Su3 A4 Au2 | bulk URL queue · speed limit + pacing · playlist sync/M3U · 4-mode subs · metadata + thumbnail embed · tray + clipboard watch |
 | 2 | [youwee](https://github.com/vanloctech/youwee) | 790 | Tauri | 🪟 🍎 🐧 | MIT | GitHub | **21** · S2 D5 Q4 Su3 A4 Au3 | RSS auto · Whisper subs · AI summary · cookie-free |
 | 3 | [GDownloader](https://github.com/hstr0100/GDownloader) | 181 | Java/Swing | 🪟 🍎 🐧 | GPL-3.0 | GitHub | **18** · S4 D4 Q4 Su1 A3 Au2 | clipboard-first · 3 downloaders (yt-dlp + gallery-dl + spotDL) · HW transcoding |
 | 4 | [yt-dlp-gui (imsyy)](https://github.com/imsyy/yt-dlp-gui) | 42 | Tauri | 🪟 🍎 🐧 | MIT | GitHub | **18** · S2 D6 Q3 Su3 A4 Au0 | bilingual subs merge · HDR aware · cookie-free |
