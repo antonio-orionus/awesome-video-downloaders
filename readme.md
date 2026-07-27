@@ -1,4 +1,4 @@
-# Awesome Video Downloaders [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+﻿# Awesome Video Downloaders [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
 > A curated list of user-facing apps for downloading video and audio from YouTube and other sites.
 
@@ -215,3 +215,6 @@ _Things you run on a server: web UIs, REST APIs, Docker images, scheduled archiv
 - [TechSquidTV/Hermes](https://github.com/TechSquidTV/Hermes) - Hermes Video Downloader — Self-hosted video downloader compatible with 1,000+ sites.
 - [kisugez/facebook-video-downloader](https://github.com/kisugez/facebook-video-downloader) - A modern web application that allows users to download videos from Facebook by providing the video URL. Built with FastAPI backend and Next.js frontend.
 - [jordanshatford/youtube-downloader](https://github.com/jordanshatford/youtube-downloader) - Fast, high quality YouTube downloads.
+- [VideoDownloaderBot](https://github.com/Avazbek22/VideoDownloaderBot) - Self-hosted Telegram media downloader with video, original-file, and MP3 delivery, one-command Docker installation, automatic Git deployment, nightly yt-dlp updates, validation, and rollback.
+- [LinkDownloaderBotForGroups](https://github.com/Avazbek22/LinkDownloaderBotForGroups) - Telegram group bot that automatically turns supported video links shared in groups into native posts, with quiet reactions, media reuse, and rollback-safe updates.
+
