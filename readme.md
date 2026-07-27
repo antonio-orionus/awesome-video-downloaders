@@ -1,4 +1,4 @@
-﻿# Awesome Video Downloaders [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+# Awesome Video Downloaders [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
 > A curated list of user-facing apps for downloading video and audio from YouTube and other sites.
 
