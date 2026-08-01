@@ -215,3 +215,5 @@ _Things you run on a server: web UIs, REST APIs, Docker images, scheduled archiv
 - [TechSquidTV/Hermes](https://github.com/TechSquidTV/Hermes) - Hermes Video Downloader — Self-hosted video downloader compatible with 1,000+ sites.
 - [kisugez/facebook-video-downloader](https://github.com/kisugez/facebook-video-downloader) - A modern web application that allows users to download videos from Facebook by providing the video URL. Built with FastAPI backend and Next.js frontend.
 - [jordanshatford/youtube-downloader](https://github.com/jordanshatford/youtube-downloader) - Fast, high quality YouTube downloads.
+
+- [Yestubers](https://yestubers.cloud) — Téléchargez et convertissez des vidéos YouTube, TikTok, Instagram, Twitter/X et Reddit en MP3/MP4 gratuitement.
