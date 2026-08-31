@@ -2,3 +2,4 @@ skills-lock.json
 .claude
 .agents
 refs
+__pycache__/
