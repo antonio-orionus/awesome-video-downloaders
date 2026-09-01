@@ -130,7 +130,10 @@ def cmd_apply(args):
         else:
             out.append(line)
     assert i == len(brows)
-    src = src.replace(board, "\n".join(out))
+    # splitlines()/join() drops board's trailing newline(s); re-attach them so the
+    # heading stays on its own line (refresh-board-data.py needs it as its own line).
+    gap = board[len("\n".join(board.splitlines())):]
+    src = src.replace(board, "\n".join(out) + gap)
     open(README, "w", encoding="utf-8").write(src)
     print(f"applied {sum(len(v) for v in adds.values())} feature cell(s) across {len(adds)} repo(s); board re-ranked")
 

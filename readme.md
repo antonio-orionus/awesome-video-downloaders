@@ -76,7 +76,9 @@ Every cross-platform desktop GUI on the list, ranked by total features and annot
 | 31 | [YT-Forge](https://github.com/Shaikh-Suja-Rahaman/YT-Forge) | 26 | 2026-08-24 | Electron | 🪟 🍎 🐧 | MIT | GitHub | **4** · S1 D2 Q1 Su0 A0 Au0 |  |
 | 32 | [MusicYT-Downloader](https://github.com/taherx7/MusicYT-Downloader) | 16 | 2026-08-13 | Electron | 🪟 🍎 🐧 | MIT | GitHub | **4** · S1 D1 Q2 Su0 A0 Au0 |  |
 | 33 | [ezytdl](https://github.com/sylviiu/ezytdl) | 789 | 2026-04-10 | Electron | 🪟 🍎 🐧 | GPL-3.0 | GitHub | **3** · S2 D1 Q0 Su0 A0 Au0 | Python bridge for fast yt-dlp startup |
-| 34 | [VidDownloader](https://github.com/AndreaSillano/VidDownloader) | 37 | 2025-10-31 | Flutter | 🪟 🍎 🐧 | MIT | GitHub | **3** · S1 D2 Q0 Su0 A0 Au0 | Flutter UI |### Capabilities matrix
+| 34 | [VidDownloader](https://github.com/AndreaSillano/VidDownloader) | 37 | 2025-10-31 | Flutter | 🪟 🍎 🐧 | MIT | GitHub | **3** · S1 D2 Q0 Su0 A0 Au0 | Flutter UI |
+
+### Capabilities matrix
 
 Single wide matrix — every feature, every project, on one row each. Same row order as **The board** above so you can cross-reference top to bottom. The matrix scrolls horizontally on narrow screens.
 
