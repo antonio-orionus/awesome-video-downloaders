@@ -179,6 +179,7 @@ _Desktop apps that ship for at least two of {Windows, macOS, Linux} — Electron
 _Apps that build and ship for Windows only — WPF, WinForms, .NET, batch scripts, AutoHotkey, PowerShell._
 
 - [kannagi0303/yt-dlp-gui](https://github.com/kannagi0303/yt-dlp-gui) - Windows GUI for yt-dlp.
+- [shaswatxd/novadl-releases](https://github.com/shaswatxd/novadl-releases) - Modern, fast download manager and stream sniffer for Windows with embedded yt-dlp & HLS extraction. https://novadl.vercel.app
 - [Bluegrams/Vividl](https://github.com/Bluegrams/Vividl) - Modern Windows GUI for YouTube-dl/ yt-dlp. Download videos from hundreds of websites.
 - [database64128/youtube-dl-wpf](https://github.com/database64128/youtube-dl-wpf) - WPF GUI for YouTube-dl and yt-dlp.
 - [legend2ks/YoutubeDownloader](https://github.com/legend2ks/YoutubeDownloader) - YouTube video/playlist/channel downloader.
@@ -190,6 +191,7 @@ _Native or cross-platform Android applications._
 
 - [JunkFood02/Seal](https://github.com/JunkFood02/Seal) - 🦭 Video/Audio Downloader for Android, based on yt-dlp.
 - [deniscerri/ytdlnis](https://github.com/deniscerri/ytdlnis) - Full-featured audio/video downloader for Android using yt-dlp.
+- [shaswatxd/novadl-android-releases](https://github.com/shaswatxd/novadl-android-releases) - Modern, ad-free download manager & stream sniffer for Android with embedded yt-dlp & Jetpack Compose UI. https://novadl.vercel.app
 - [prateek-chaubey/YTPro](https://github.com/prateek-chaubey/YTPro) - YouTube client with older Android version support, background player, Google Gemini ✨ and many more features.
 - [alexch33/super-video-downloader](https://github.com/alexch33/super-video-downloader) - Video & Audio downloader for Android with web browser and player. M3U8 and MPD supported, live stream supported, using YouTube-dlp and custom mp4/mp3/m3u8/mpd downloader, cookies supported, HTTP & SOCKS proxy chains supported, encrypted DNS.
 - [shibaFoss/AIO-Video-Downloader](https://github.com/shibaFoss/AIO-Video-Downloader) - 📥 Powerful Video/Audio Downloader for Android — Open Source, Ad-Free, and Built on yt-dlp for a Seamless, User-Centric Experience.
