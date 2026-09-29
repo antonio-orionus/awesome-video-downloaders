@@ -183,6 +183,7 @@ _Apps that build and ship for Windows only — WPF, WinForms, .NET, batch script
 - [database64128/youtube-dl-wpf](https://github.com/database64128/youtube-dl-wpf) - WPF GUI for YouTube-dl and yt-dlp.
 - [legend2ks/YoutubeDownloader](https://github.com/legend2ks/YoutubeDownloader) - YouTube video/playlist/channel downloader.
 - [LeoTN/yt-dlp-autohotkey-gui](https://github.com/LeoTN/yt-dlp-autohotkey-gui) - This is a very basic GUI for the well known (YouTube) downloader yt-dlp.
+- [xniperbuilds/riplox-desktop](https://github.com/xniperbuilds/riplox-desktop) - Downloads links shared from your phone (Android share sheet or iPhone Shortcut), even if the PC was off when you sent them; also playlists, channels and new-upload tracking.
 
 ## Android apps
 
