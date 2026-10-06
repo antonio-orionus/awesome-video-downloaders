@@ -173,6 +173,7 @@ _Desktop apps that ship for at least two of {Windows, macOS, Linux} — Electron
 - [BERNARDO31P/FastDownloader](https://github.com/BERNARDO31P/FastDownloader) - FastDownloader: A fast video/audio downloader for over 1800 websites!
 - [aliencaocao/ytdlp-gui](https://github.com/aliencaocao/ytdlp-gui) - A simple GUI for yt-dlp based on Tkinter, written in pure Python 3.
 - [markop404/media-downloader](https://github.com/markop404/media-downloader) - Web video/audio downloader.
+- [albilu/open-download-manager](https://github.com/albilu/open-download-manager) - Native GTK4 download manager for Linux combining aria2, yt-dlp and HTTrack with torrents, scheduling and Tor routing.
 
 ## Windows-only desktop apps
 
