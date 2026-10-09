@@ -44,19 +44,19 @@ Every cross-platform desktop GUI on the list, ranked by total features and annot
 | # | Project | ⭐ | Last push | Stack | Platforms | License | Distribution | Score | Headline traits |
 |---:|---|---:|---:|---|---|---|---|---|---|
 | 1 | [omniget](https://github.com/tonhowtf/omniget) | 14366 | 2026-09-25 | Tauri | 🪟 🍎 🐧 | GPL-3.0 | GitHub | **30** · S5 D8 Q7 Su4 A0 Au6 | channel auto-download · Whisper subs + Subtitle Workshop · SponsorBlock · trim + HDR · P2P transfer · plugin marketplace · course downloads |
-| 2 | [Arroxy](https://github.com/antonio-orionus/Arroxy) | 390 | 2026-10-05 | Electron | 🪟 🍎 🐧 | MIT | Winget · Scoop · Homebrew · Flatpak | **27** · S2 D8 Q6 Su3 A4 Au4 | download profiles + per-video playlist overrides · cookie-free PO-token anti-bot · bulk URL queue · speed limit + pacing · playlist sync/M3U · 4-mode subs · metadata + thumbnail embed · tray + clipboard watch · global hotkey |
-| 3 | [youwee](https://github.com/vanloctech/youwee) | 1549 | 2026-09-20 | Tauri | 🪟 🍎 🐧 | MIT | GitHub | **24** · S2 D6 Q4 Su4 A4 Au4 | RSS auto · Whisper subs · AI summary · cookie-free |
+| 2 | [Arroxy](https://github.com/antonio-orionus/Arroxy) | 391 | 2026-10-09 | Electron | 🪟 🍎 🐧 | MIT | Winget · Scoop · Homebrew · Flatpak | **27** · S2 D8 Q6 Su3 A4 Au4 | download profiles + per-video playlist overrides · cookie-free PO-token anti-bot · bulk URL queue · speed limit + pacing · playlist sync/M3U · 4-mode subs · metadata + thumbnail embed · tray + clipboard watch · global hotkey |
+| 3 | [youwee](https://github.com/vanloctech/youwee) | 1553 | 2026-09-20 | Tauri | 🪟 🍎 🐧 | MIT | GitHub | **24** · S2 D6 Q4 Su4 A4 Au4 | RSS auto · Whisper subs · AI summary · cookie-free |
 | 4 | [GDownloader](https://github.com/hstr0100/GDownloader) | 231 | 2026-10-07 | Java/Swing | 🪟 🍎 🐧 | GPL-3.0 | GitHub | **23** · S5 D5 Q5 Su1 A4 Au3 | clipboard-first · 3 downloaders (yt-dlp + gallery-dl + spotDL) · HW transcoding |
-| 5 | [yt-dlp-gui (imsyy)](https://github.com/imsyy/yt-dlp-gui) | 495 | 2026-09-20 | Tauri | 🪟 🍎 🐧 | MIT | GitHub | **23** · S2 D7 Q5 Su4 A4 Au1 | bilingual subs merge · HDR aware · cookie-free |
-| 6 | [YTSage](https://github.com/oop7/YTSage) | 4647 | 2026-10-08 | Python/PySide6 | 🪟 🍎 🐧 | MIT | PyPI · GitHub | **22** · S1 D7 Q5 Su3 A5 Au1 | pip-installable · EBU R128 audio · HDR aware · cookie-free |
-| 7 | [neodlp](https://github.com/neosubhamoy/neodlp) | 572 | 2026-10-03 | Tauri | 🪟 🍎 🐧 | MIT | Winget · Homebrew · Flathub | **18** · S3 D4 Q4 Su1 A5 Au1 | bundled bgutil-pot · 5/5 auth options · browser extension |
-| 8 | [Parabolic](https://github.com/NickvisionApps/Parabolic) | 7286 | 2026-06-29 | .NET native | 🪟 🍎 🐧 | MIT | Flathub · GitHub | **17** · S2 D6 Q3 Su4 A1 Au1 | 4-mode subs · GTK4 + WinUI native · batch URL list |
+| 5 | [yt-dlp-gui (imsyy)](https://github.com/imsyy/yt-dlp-gui) | 504 | 2026-09-20 | Tauri | 🪟 🍎 🐧 | MIT | GitHub | **23** · S2 D7 Q5 Su4 A4 Au1 | bilingual subs merge · HDR aware · cookie-free |
+| 6 | [YTSage](https://github.com/oop7/YTSage) | 4649 | 2026-10-09 | Python/PySide6 | 🪟 🍎 🐧 | MIT | PyPI · GitHub | **22** · S1 D7 Q5 Su3 A5 Au1 | pip-installable · EBU R128 audio · HDR aware · cookie-free |
+| 7 | [neodlp](https://github.com/neosubhamoy/neodlp) | 573 | 2026-10-03 | Tauri | 🪟 🍎 🐧 | MIT | Winget · Homebrew · Flathub | **18** · S3 D4 Q4 Su1 A5 Au1 | bundled bgutil-pot · 5/5 auth options · browser extension |
+| 8 | [Parabolic](https://github.com/NickvisionApps/Parabolic) | 7299 | 2026-06-29 | .NET native | 🪟 🍎 🐧 | MIT | Flathub · GitHub | **17** · S2 D6 Q3 Su4 A1 Au1 | 4-mode subs · GTK4 + WinUI native · batch URL list |
 | 9 | [comine](https://github.com/nichind/comine) | 206 | 2026-06-14 | Tauri | 🪟 🍎 🐧 🤖 | GPL-3.0 | GitHub | **16** · S5 D5 Q1 Su1 A2 Au2 | Android target · Discord RPC · multi-backend |
 | 10 | [ytget-gui](https://github.com/ErfanNamira/ytget-gui) | 49 | 2026-10-08 | Python/PyQt | 🪟 🍎 🐧 | MIT | PyPI · GitHub | **16** · S1 D6 Q4 Su1 A4 Au0 | pip-installable · retry config · 5/7 download options |
-| 11 | [ytDownloader](https://github.com/aandrew-me/ytDownloader) | 10457 | 2026-10-07 | Electron | 🪟 🍎 🐧 | GPL-3.0 | Scoop · Winget · Chocolatey | **14** · S2 D4 Q4 Su1 A3 Au0 | built-in video compressor · Scoop · Winget · Chocolatey |
+| 11 | [ytDownloader](https://github.com/aandrew-me/ytDownloader) | 10470 | 2026-10-08 | Electron | 🪟 🍎 🐧 | GPL-3.0 | Scoop · Winget · Chocolatey | **14** · S2 D4 Q4 Su1 A3 Au0 | built-in video compressor · Scoop · Winget · Chocolatey |
 | 12 | [varia](https://github.com/giantpinkrobots/varia) | 1867 | 2026-10-03 | Python/GTK | 🪟 🍎 🐧 | MPL-2.0 | Flathub · AUR · Snap | **14** · S4 D4 Q0 Su0 A3 Au3 | download scheduler · sleep-on-completion · GTK native |
 | 13 | [Aither-Download-Manager](https://github.com/NoahMustafa/Aither-Download-Manager) | 26 | 2026-07-01 | Tauri | 🪟 | none | GitHub | **13** · S3 D4 Q2 Su0 A2 Au2 | in-page browser overlay · 16 UI languages |
-| 14 | [Pulsar](https://github.com/FuzjaJadrowa/Pulsar) | 66 | 2026-09-21 | Tauri | 🪟 🍎 🐧 | GPL-3.0 | Flathub · GitHub | **13** · S2 D3 Q3 Su2 A2 Au1 | preset system · video converter mode |
+| 14 | [Pulsar](https://github.com/FuzjaJadrowa/Pulsar) | 67 | 2026-09-21 | Tauri | 🪟 🍎 🐧 | GPL-3.0 | Flathub · GitHub | **13** · S2 D3 Q3 Su2 A2 Au1 | preset system · video converter mode |
 | 15 | [streamfetch](https://github.com/Shripad735/streamfetch) | 44 | 2026-04-19 | Electron | 🪟 🍎 🐧 | MIT | GitHub | **12** · S2 D5 Q2 Su0 A2 Au1 | turbo mode · clip studio |
 | 16 | [mediaharbor](https://github.com/MediaHarbor/mediaharbor) | 221 | 2026-10-02 | Electron | 🪟 🍎 🐧 | GPL-3.0 | MS Store · GitHub | **12** · S2 D4 Q3 Su1 A2 Au0 | native Tidal / Qobuz / Deezer clients · built-in player |
 | 17 | [vibedownloader-desktop](https://github.com/naeem5877/vibedownloader-desktop) | 21 | 2026-10-05 | Electron | 🪟 🍎 🐧 | custom | GitHub | **11** · S3 D4 Q2 Su0 A1 Au1 | lossless Spotify FLAC via proxy |
@@ -75,7 +75,7 @@ Every cross-platform desktop GUI on the list, ranked by total features and annot
 | 30 | [VidGrabber](https://github.com/oheyek/VidGrabber) | 29 | 2026-10-04 | Python/Tkinter | 🪟 🍎 🐧 | MIT | GitHub | **4** · S1 D2 Q1 Su0 A0 Au0 |  |
 | 31 | [YT-Forge](https://github.com/Shaikh-Suja-Rahaman/YT-Forge) | 27 | 2026-09-29 | Electron | 🪟 🍎 🐧 | MIT | GitHub | **4** · S1 D2 Q1 Su0 A0 Au0 |  |
 | 32 | [MusicYT-Downloader](https://github.com/taherx7/MusicYT-Downloader) | 18 | 2026-08-13 | Electron | 🪟 🍎 🐧 | MIT | GitHub | **4** · S1 D1 Q2 Su0 A0 Au0 |  |
-| 33 | [ezytdl](https://github.com/sylviiu/ezytdl) | 791 | 2026-04-10 | Electron | 🪟 🍎 🐧 | GPL-3.0 | GitHub | **3** · S2 D1 Q0 Su0 A0 Au0 | Python bridge for fast yt-dlp startup |
+| 33 | [ezytdl](https://github.com/sylviiu/ezytdl) | 792 | 2026-04-10 | Electron | 🪟 🍎 🐧 | GPL-3.0 | GitHub | **3** · S2 D1 Q0 Su0 A0 Au0 | Python bridge for fast yt-dlp startup |
 | 34 | [VidDownloader](https://github.com/AndreaSillano/VidDownloader) | 37 | 2025-10-31 | Flutter | 🪟 🍎 🐧 | MIT | GitHub | **3** · S1 D2 Q0 Su0 A0 Au0 | Flutter UI |
 
 ### Capabilities matrix
