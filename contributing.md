@@ -19,7 +19,7 @@ A project is eligible if **all** of the following are true:
 
 ## Adding an entry
 
-1. Pick the right section: Cross-platform desktop GUIs, Windows-only desktop apps, Android apps, iOS and macOS apps, Browser extensions and userscripts, or Self-hosted.
+1. Pick the right section: Cross-platform desktop GUIs, Windows-only desktop apps, Linux-only desktop apps, Android apps, iOS and macOS apps, Browser extensions and userscripts, or Self-hosted.
 2. Add the entry in this exact format:
 
    ```
