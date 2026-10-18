@@ -59,12 +59,13 @@ download) · 23. Filename templates (custom naming with variables) · 24. Subtit
 separate (sidecar file) · 25. Subtitles Embed in container (mkv/mp4) · 26. Subtitle
 Format choice (SRT/VTT/ASS) · 27. Subtitle Post-edit (beyond save: merge, burn-in,
 translation, generation like Whisper) · 28. Cookies from browser · 29. cookies.txt file ·
-30. Proxy · 31. Custom args (user-supplied extra yt-dlp arguments) · 32. Cookie-free
-anti-bot (PO tokens/bgutil-like, no login) · 33. Browser extension · 34. Clipboard watch
-(monitor clipboard for URLs) · 35. Channel / RSS auto (auto-download new videos from
-channels/RSS) · 36. Scheduler (timed downloads) · 37. System tray (minimize to
-tray/background) · 38. Global hotkey · 39. Auto-update yt-dlp (app keeps yt-dlp current
-by itself) · 40. Plugin system (install third-party app plugins)
+30. In-app sign-in (log in to the site inside the app's own browser window, no cookie
+export) · 31. Proxy · 32. Custom args (user-supplied extra yt-dlp arguments) · 33. Cookie-free
+anti-bot (PO tokens/bgutil-like, no login) · 34. Browser extension · 35. Clipboard watch
+(monitor clipboard for URLs) · 36. Channel / RSS auto (auto-download new videos from
+channels/RSS) · 37. Scheduler (timed downloads) · 38. System tray (minimize to
+tray/background) · 39. Global hotkey · 40. Auto-update yt-dlp (app keeps yt-dlp current
+by itself) · 41. Plugin system (install third-party app plugins)
 
 CURRENT TABLE STATUS (✅ already credited): <CURRENT STATUS>
 
@@ -73,7 +74,7 @@ YOUR JOB: find (a) ADD candidates — README-documented features missing from th
 ✅ is NOT a flag; ignore it.
 
 OUTPUT: one line per noteworthy finding: `- <Feature name>: ADD|FLAG — "<short quote>"`.
-Then one line per distinctive feature the 40 columns do NOT cover (feeds future column
+Then one line per distinctive feature the 41 columns do NOT cover (feeds future column
 candidates): `- UNIQUE: <feature> — "<short quote>"`. Keep UNIQUE honest — only features
 a comparison shopper would care about, not generic polish (themes, languages counts).
 Final line exactly: `SUMMARY: ADD=<names or none>; FLAG=<names or none>; UNIQUE=<count>`
