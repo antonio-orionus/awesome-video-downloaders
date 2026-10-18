@@ -182,6 +182,7 @@ _Apps that build and ship for Windows only — WPF, WinForms, .NET, batch script
 - [legend2ks/YoutubeDownloader](https://github.com/legend2ks/YoutubeDownloader) - YouTube video/playlist/channel downloader.
 - [LeoTN/yt-dlp-autohotkey-gui](https://github.com/LeoTN/yt-dlp-autohotkey-gui) - This is a very basic GUI for the well known (YouTube) downloader yt-dlp.
 - [xniperbuilds/riplox-desktop](https://github.com/xniperbuilds/riplox-desktop) - Downloads links shared from your phone (Android share sheet or iPhone Shortcut) through an end-to-end encrypted relay, even if the PC was off when you sent them; also playlists, channels and new-upload tracking.
+- [nunodacosta/MediaDesk](https://github.com/nunodacosta/MediaDesk) - yt-dlp front end that organises downloads into colour-coded drawers and indexes them in a browsable media library.
 
 ## Linux-only desktop apps
 
