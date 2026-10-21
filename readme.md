@@ -213,6 +213,8 @@ _Chrome / Firefox extensions and userscripts that trigger downloads from the pag
 - [tublydownloader/Firefox-YouTube-Downloader](https://github.com/tublydownloader/Firefox-YouTube-Downloader) - Firefox add-on to download YouTube videos and Shorts, and convert to MP3 in one click.
 - [neosubhamoy/neodlp-extension](https://github.com/neosubhamoy/neodlp-extension) - NeoDLP (Neo Downloader Plus) Browser Integration.
 
+- [ezwebtools/flowpick](https://github.com/ezwebtools/flowpick) - Detect HLS/DASH streams and download video, audio and images from web pages, with media previews and local processing.
+
 ## Self-hosted
 
 _Things you run on a server: web UIs, REST APIs, Docker images, scheduled archivers, \*-arr companions, podcast/STRM converters._
