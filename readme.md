@@ -208,9 +208,6 @@ _Native or cross-platform Android applications._
 
 _Chrome / Firefox extensions and userscripts that trigger downloads from the page._
 
-- [DeveloperMDCM/Youtube-tools-extension](https://github.com/DeveloperMDCM/Youtube-tools-extension) - Add extra options to YouTube page / añade opciones extras a la pagina de YouTube.
-- [tublydownloader/Youtube-Downloader-Extension](https://github.com/tublydownloader/Youtube-Downloader-Extension) - A Chrome extension to download YouTube videos in 4K, convert to MP3, and save YouTube Shorts. https://tubly.download.
-- [tublydownloader/Firefox-YouTube-Downloader](https://github.com/tublydownloader/Firefox-YouTube-Downloader) - Firefox add-on to download YouTube videos and Shorts, and convert to MP3 in one click.
 - [neosubhamoy/neodlp-extension](https://github.com/neosubhamoy/neodlp-extension) - NeoDLP (Neo Downloader Plus) Browser Integration.
 
 ## Self-hosted
