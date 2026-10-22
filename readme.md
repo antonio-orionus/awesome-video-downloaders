@@ -2,8 +2,6 @@
 
 > A curated list of user-facing apps for downloading video and audio from YouTube and other sites.
 
-Most entries are powered by [yt-dlp](https://github.com/yt-dlp/yt-dlp) under the hood.
-
 ## Contents
 
 - [Comparison at a glance](#comparison-at-a-glance)
