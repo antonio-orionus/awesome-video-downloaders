@@ -16,28 +16,6 @@
 
 This section compares the apps in [Cross-platform desktop GUIs](#cross-platform-desktop-guis) only. Windows-only, Android, browser extensions, and self-hosted apps are listed further down but not compared here. Feature data was compiled from each project's README, docs, and source on 2026-05-01, with re-audits listed in [Methodology](#methodology); ⭐ and **Last push** are live snapshots refreshed daily by a GitHub Action. Apps ship — open a PR to correct anything stale.
 
-### Pick by use case
-
-- *I just want to grab a YouTube video occasionally* → Arroxy, ytDownloader, YTSage, Parabolic
-- *Polished Linux / GNOME native* → Parabolic, varia
-- *Available on Winget / Scoop / Homebrew* → Arroxy, ytDownloader, NeoDLP, varia, media-downloader
-- *Bulk URL batches with speed controls* → Arroxy
-- *Mixed-quality playlist passes (per-video profiles)* → Arroxy
-- *Browse YouTube inside the app and download without copying links* → Arroxy
-- *Sign in inside the app instead of exporting browser cookies* → Arroxy, arcdlp
-- *More than yt-dlp (gallery-dl / spotDL / aria2 engines)* → GDownloader, comine, neodlp, varia
-- *Convert or compress after download* → yt-dlp-gui, GDownloader, YTSage, ytDownloader, Pulsar, omniget
-- *Auto-download new videos from channels you follow* → youwee, omniget
-- *Tiny native binary, low RAM* → Sunder, NeoDLP, comine, Pulsar, omniget, Parabolic
-- *Streaming music player, not a file downloader* → Sunder
-- *Download torrents alongside video* → varia, omniget, comine
-- *Streaming services (Spotify / Tidal / Qobuz / Deezer)* → mediaharbor, vibedownloader-desktop
-- *E-learning courses (Udemy / Hotmart / Teachable)* → omniget
-- *Subtitle authoring + AI summaries* → youwee, omniget
-- *Image-board galleries* → GDownloader, comine
-- *Also runs on Android* → comine
-- *Install via `pip`* → YTSage, yt-channel-downloader, ytget-gui
-
 ### The board
 
 Every cross-platform desktop GUI on the list, ranked by total features and annotated with what makes each one stand out. The score breakdown shows sub-totals across the six feature categories (Sources / Downloads / Quality / Subtitles / Auth / Automation) detailed in the matrix below. **Last push** is the project repo's most recent push — a liveness signal refreshed daily along with ⭐.
