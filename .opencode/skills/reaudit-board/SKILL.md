@@ -6,7 +6,7 @@ description: Re-audit Awesome Video Downloaders comparison rows against upstream
 # Re-audit the board
 
 Re-checks the feature comparison (top N rows) against each project's README, applies
-feature-cell additions, re-scores, and re-ranks. Mechanical data (⭐, Last push, License)
+feature-cell additions, re-scores, and re-ranks. Mechanical data (⭐, Pushed, License)
 is NOT part of this — the daily CI refreshes it.
 
 ## Workflow
@@ -107,8 +107,7 @@ board/matrix rows aligned.
 ### 6. Hand-edit the prose the script cannot know
 
 - **Methodology → Re-audits**: append `YYYY-MM-DD — <Project>` for each row audited.
-- **Pick by use case**: update lines affected by new features (e.g. channel auto-download).
-- **Headline traits** in the board for rows whose story changed materially.
+- **Stands out for** in the board (at most three short traits) for rows whose story changed materially.
 - **List description bullets** for big movers.
 
 ### 7. Verify and commit

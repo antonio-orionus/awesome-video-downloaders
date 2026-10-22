@@ -18,7 +18,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      # A repo that can't be fetched (deleted, renamed, private) fails the run, but only
+      # after the rows that did refresh are committed.
       - name: Refresh stars, last push, and licenses
+        id: refresh
+        continue-on-error: true
         env:
           GH_TOKEN: ${{ github.token }}
         run: python3 scripts/refresh-board-data.py --strict
@@ -34,3 +38,9 @@ jobs:
             git commit -m "chore: refresh board stars and last-push dates"
             git push
           fi
+
+      - name: Fail if any repo fetch failed
+        if: steps.refresh.outcome == 'failure'
+        run: |
+          echo "::error::refresh-board-data.py failed; see the Refresh step log for the repo(s)"
+          exit 1

@@ -69,7 +69,7 @@ def cmd_status(args):
     mrows = matrix_rows(src)
     order = sorted(brows, key=lambda r: int(brows[r][0]))[:args.top]
     for repo in order:
-        name = re.sub(r'\[([^]]+)\]\([^)]*\)', r'\1', brows[repo][1])
+        name = re.sub(r'\[([^]]+)\]\([^)]*\)', r'\1', brows[repo][1].split('<br>')[0])
         yes = [n for n in cols if mrows[repo][cols.index(n)] == '✅']
         total, _ = counts_for(mrows[repo], cols, groups)
         print(f"{brows[repo][0]:>2}. {name} ({repo}) [{total}]: {', '.join(yes) if yes else '(none)'}")
@@ -103,7 +103,7 @@ def cmd_apply(args):
         for i, repo in enumerate(order, 1):
             total, counts = counts_for(mrows[repo], cols, groups)
             mark = " *changed*" if repo in changed else ""
-            name = re.sub(r'\[([^]]+)\]\([^)]*\)', r'\1', brows[repo][1])
+            name = re.sub(r'\[([^]]+)\]\([^)]*\)', r'\1', brows[repo][1].split('<br>')[0])
             print(f" {i:>2}. {total:>3}  {name:<24} {breakdown(counts)}{mark}")
         return
 
@@ -113,7 +113,7 @@ def cmd_apply(args):
         total, counts = counts_for(mrows[repo], cols, groups)
         b = brows[repo][:]
         b[0] = str(newpos)
-        b[8] = f"**{total}** · {breakdown(counts)}"
+        b[4] = f"**{total}**"
         lines_b.append("| " + " | ".join(b) + " |")
         name = re.search(r'>([^<]+)</a></td>', mlines_src(src, repo)).group(1)
         lines_m.append(f'<tr><td>{newpos}</td><td><a href="https://github.com/{repo}">{name}</a></td>' + ''.join(f'<td align="center">{c}</td>' for c in mrows[repo]) + '</tr>')
@@ -158,9 +158,9 @@ def cmd_verify(args):
         if bpos[repo] != mpos:
             problems.append(f"{repo}: board position {bpos[repo]} != matrix {mpos}")
         total, counts = counts_for(mrows[repo], cols, groups)
-        expected = f"**{total}** · {breakdown(counts)}"
-        if bparts[8] != expected:
-            problems.append(f"{repo}: score cell {bparts[8]!r} != {expected!r}")
+        expected = f"**{total}**"
+        if bparts[4] != expected:
+            problems.append(f"{repo}: score cell {bparts[4]!r} != {expected!r}")
     seq = [bpos[r] for r in sorted(brows, key=lambda r: int(brows[r][0]))]
     if seq != list(range(1, len(brows) + 1)):
         problems.append("positions are not 1..N")

@@ -2,8 +2,8 @@
 """Refresh the mechanical cells of The board in readme.md.
 
 For every row, fetch stars / last push / license via `gh api repos/<owner>/<repo>`
-and update the ⭐, Last push, and License cells. Feature cells, scores, and row
-order are never touched. Requires the gh CLI. Use --dry-run to preview changes.
+and update the ⭐ and Pushed cells and the license in the Project cell's <sub> line
+(`stack · license · ...`). Feature cells, scores, and row order are never touched. Requires the gh CLI. Use --dry-run to preview changes.
 """
 
 import argparse
@@ -16,12 +16,10 @@ README = "readme.md"
 BOARD_HEADING = "### The board"
 NEXT_HEADING = "### Capabilities matrix"
 
-OLD_HEADER = ["#", "Project", "⭐", "Stack", "Platforms", "License", "Distribution", "Score", "Headline traits"]
-NEW_HEADER = ["#", "Project", "⭐", "Last push", "Stack", "Platforms", "License", "Distribution", "Score", "Headline traits"]
-NEW_SEP = "|---:|---|---:|---:|---|---|---|---|---|---|"
+HEADER = ["#", "Project", "⭐", "Pushed", "Score", "Stands out for"]
 
-FIELD_LABELS = {2: "⭐", 3: "Last push", 6: "License"}
 REPO_RE = re.compile(r"github\.com/([\w.-]+/[\w.-]+)")
+SUB_RE = re.compile(r"<sub>(.*?)</sub>")
 SKIP_LICENSES = {"NOASSERTION", "OTHER"}
 
 
@@ -34,7 +32,24 @@ def join_row(cells):
 
 
 def row_name(project_cell):
-    return re.sub(r"\[([^]]+)\]\([^)]*\)", r"\1", project_cell)
+    return re.sub(r"\[([^]]+)\]\([^)]*\)", r"\1", project_cell.split("<br>")[0])
+
+
+def format_stars(n):
+    return f"{n / 1000:.1f}k".replace(".0k", "k") if n >= 1000 else str(n)
+
+
+def get_license(project_cell):
+    m = SUB_RE.search(project_cell)
+    parts = m.group(1).split(" · ") if m else []
+    return parts[1] if len(parts) > 1 else None
+
+
+def set_license(project_cell, value):
+    m = SUB_RE.search(project_cell)
+    parts = m.group(1).split(" · ")
+    parts[1] = value
+    return project_cell[:m.start(1)] + " · ".join(parts) + project_cell[m.end(1):]
 
 
 def fetch_repo(repo):
@@ -46,32 +61,43 @@ def fetch_repo(repo):
     data = json.loads(proc.stdout)
     return {
         "stars": data.get("stargazers_count"),
-        "pushed": (data.get("pushed_at") or "")[:10],
+        # YYYY‑MM with a non-breaking hyphen (U+2011) so the narrow cell never wraps
+        "pushed": (data.get("pushed_at") or "")[:7].replace("-", "\u2011"),
         "license": (data.get("license") or {}).get("spdx_id"),
     }
 
 
 def refresh_row(cells, dry_run):
+    """Return (changed, fetch_failed)."""
     match = REPO_RE.search(cells[1])
     if not match:
         print(f"  ! {row_name(cells[1])}: no GitHub repo link, skipped")
-        return False
+        return False, False
     repo = match.group(1).removesuffix(".git")
     data = fetch_repo(repo)
     if data is None:
-        return False
+        return False, True
+    license_ = data["license"] if data["license"] not in SKIP_LICENSES else None
+    if license_ and get_license(cells[1]) is None:
+        sys.exit(f"{row_name(cells[1])}: Project cell has no `<sub>stack · license</sub>` line")
     changes = []
-    for idx, label in FIELD_LABELS.items():
-        value = {"⭐": str(data["stars"]) if data["stars"] is not None else None,
-                 "Last push": data["pushed"] or None,
-                 "License": data["license"] if data["license"] and data["license"] not in SKIP_LICENSES else None}[label]
-        if value is not None and value != cells[idx]:
-            changes.append(f"{label} {cells[idx] or '—'} → {value}")
-            if not dry_run:
-                cells[idx] = value
+
+    def update(label, old, new):
+        if new is not None and new != old:
+            changes.append(f"{label} {old or '—'} → {new}")
+            return not dry_run
+        return False
+
+    stars = format_stars(data["stars"]) if data["stars"] is not None else None
+    if update("⭐", cells[2], stars):
+        cells[2] = stars
+    if update("Pushed", cells[3], data["pushed"] or None):
+        cells[3] = data["pushed"]
+    if update("License", get_license(cells[1]), license_):
+        cells[1] = set_license(cells[1], license_)
     if changes:
         print(f"  {row_name(cells[1])}: {'; '.join(changes)}")
-    return bool(changes)
+    return bool(changes), False
 
 
 def main():
@@ -90,33 +116,24 @@ def main():
         sys.exit(f"could not find {BOARD_HEADING!r} / {NEXT_HEADING!r} in {README}")
 
     out = lines[:start + 1]
-    header_seen = sep_seen = False
+    header_seen = False
     changed = failures = 0
 
     for line in lines[start + 1:end]:
-        if not line.startswith("|"):
-            out.append(line)
-            continue
-        cells = split_row(line)
-        if not header_seen and cells in (OLD_HEADER, NEW_HEADER):
-            out.append(join_row(NEW_HEADER))
+        cells = split_row(line) if line.startswith("|") else []
+        if cells == HEADER:
             header_seen = True
-        elif not sep_seen and header_seen and all(c.startswith("---") for c in cells):
-            out.append(NEW_SEP)
-            sep_seen = True
-        elif header_seen and sep_seen and cells and cells[0].isdigit():
-            if len(cells) == len(OLD_HEADER):
-                cells.insert(3, "")
-            if len(cells) != len(NEW_HEADER):
+        elif header_seen and cells and cells[0].isdigit():
+            if len(cells) != len(HEADER):
                 sys.exit(f"unexpected row width ({len(cells)} cells): {cells[:3]}")
-            if refresh_row(cells, args.dry_run):
-                changed += 1
-            out.append(join_row(cells))
-        else:
-            out.append(line)
+            row_changed, row_failed = refresh_row(cells, args.dry_run)
+            changed += row_changed
+            failures += row_failed
+            line = join_row(cells)
+        out.append(line)
 
-    if header_seen != sep_seen:
-        sys.exit("board header/separator upgrade did not apply cleanly")
+    if not header_seen:
+        sys.exit(f"board header {join_row(HEADER)!r} not found")
 
     if args.dry_run:
         print(f"dry run: {changed} row(s) would change, {failures} fetch failure(s)")
