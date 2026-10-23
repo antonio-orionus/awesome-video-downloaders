@@ -22,15 +22,15 @@ Every cross-platform desktop GUI on the list, ranked by total features (each fea
 
 | # | Project | ⭐ | Pushed | Score | Stands out for |
 |---:|---|---:|---|---:|---|
-| 1 | [omniget](https://github.com/OpenSelena/omniget)<br><sub>Tauri · GPL-3.0 · [original repo gone](#methodology)</sub> | 363 | 2026‑10 | **30** | channel auto-download · Whisper subs · SponsorBlock |
-| 2 | [Arroxy](https://github.com/antonio-orionus/Arroxy)<br><sub>Electron · GPL-3.0 · Winget, Scoop, Homebrew, Flatpak</sub> | 758 | 2026‑10 | **29** | in-app YouTube browser · download profiles · cookie-free PO tokens |
+| 1 | [omniget](https://github.com/OpenSelena/omniget)<br><sub>Tauri · GPL-3.0 · [original repo gone](#methodology)</sub> | 367 | 2026‑10 | **30** | channel auto-download · Whisper subs · SponsorBlock |
+| 2 | [Arroxy](https://github.com/antonio-orionus/Arroxy)<br><sub>Electron · GPL-3.0 · Winget, Scoop, Homebrew, Flatpak</sub> | 767 | 2026‑10 | **29** | in-app YouTube browser · download profiles · cookie-free PO tokens |
 | 3 | [youwee](https://github.com/vanloctech/youwee)<br><sub>Tauri · MIT</sub> | 1.6k | 2026‑09 | **24** | RSS auto · Whisper subs · AI summary |
 | 4 | [GDownloader](https://github.com/hstr0100/GDownloader)<br><sub>Java/Swing · GPL-3.0</sub> | 235 | 2026‑10 | **23** | clipboard-first · yt-dlp + gallery-dl + spotDL |
 | 5 | [yt-dlp-gui (imsyy)](https://github.com/imsyy/yt-dlp-gui)<br><sub>Tauri · MIT</sub> | 577 | 2026‑09 | **23** | bilingual subs merge · HDR aware · cookie-free |
 | 6 | [YTSage](https://github.com/oop7/YTSage)<br><sub>Python/PySide6 · MIT · PyPI</sub> | 4.7k | 2026‑10 | **22** | pip-installable · EBU R128 audio · HDR aware |
 | 7 | [neodlp](https://github.com/neosubhamoy/neodlp)<br><sub>Tauri · MIT · Winget, Homebrew, Flathub</sub> | 581 | 2026‑10 | **18** | bundled bgutil-pot · 5/6 auth options · browser extension |
 | 8 | [Parabolic](https://github.com/NickvisionApps/Parabolic)<br><sub>.NET native · MIT · Flathub</sub> | 7.4k | 2026‑06 | **17** | 4-mode subs · GTK4 + WinUI native · batch URL list |
-| 9 | [comine](https://github.com/nichind/comine)<br><sub>Tauri · GPL-3.0 · 🪟🍎🐧🤖</sub> | 213 | 2026‑06 | **16** | Android target · Discord RPC · multi-backend |
+| 9 | [comine](https://github.com/nichind/comine)<br><sub>Tauri · GPL-3.0 · 🪟🍎🐧🤖</sub> | 214 | 2026‑06 | **16** | Android target · Discord RPC · multi-backend |
 | 10 | [ytget-gui](https://github.com/ErfanNamira/ytget-gui)<br><sub>Python/PySide6 · MIT · PyPI</sub> | 50 | 2026‑10 | **16** | pip-installable · retry config · 5/7 download options |
 | 11 | [ytDownloader](https://github.com/aandrew-me/ytDownloader)<br><sub>Electron · GPL-3.0 · Scoop, Winget, Chocolatey</sub> | 10.5k | 2026‑10 | **14** | built-in video compressor |
 | 12 | [varia](https://github.com/giantpinkrobots/varia)<br><sub>Python/GTK · MPL-2.0 · Flathub, AUR, Snap</sub> | 1.9k | 2026‑10 | **14** | download scheduler · sleep-on-completion · GTK native |
@@ -46,10 +46,10 @@ Every cross-platform desktop GUI on the list, ranked by total features (each fea
 | 22 | [arcdlp](https://github.com/archisvaze/arcdlp)<br><sub>Electron · MIT</sub> | 217 | 2026‑10 | **8** | Instagram saved collections · cookie-mint window |
 | 23 | [ytdlp-gui (aliencaocao)](https://github.com/aliencaocao/ytdlp-gui)<br><sub>Python/Tkinter · none</sub> | 30 | 2026‑10 | **7** | single-file executable |
 | 24 | [media-downloader](https://github.com/markop404/media-downloader)<br><sub>Python/PyQt · GPL-3.0 · 🪟🐧 · Flathub, Winget</sub> | 31 | 2026‑08 | **7** | PGP-verified yt-dlp updates |
-| 25 | [Sunder](https://github.com/FrogSnot/Sunder)<br><sub>Tauri · AGPL-3.0 · AUR</sub> | 26 | 2026‑10 | **7** | streaming music player · 10-band EQ |
+| 25 | [Sunder](https://github.com/FrogSnot/Sunder)<br><sub>Tauri · AGPL-3.0 · AUR</sub> | 25 | 2026‑10 | **7** | streaming music player · 10-band EQ |
 | 26 | [YouTube-Downloader](https://github.com/MAymanKH/YouTube-Downloader)<br><sub>Python/Tkinter · none · 🪟🐧</sub> | 126 | 2025‑11 | **6** | YouTube search built in |
 | 27 | [FastDownloader](https://github.com/BERNARDO31P/FastDownloader)<br><sub>Electron · GPL-3.0 · AUR</sub> | 42 | 2026‑05 | **6** | YouTube Premium · YT Music conversion |
-| 28 | [pytube-downloader](https://github.com/thisal-d/pytube-downloader)<br><sub>Python/Tkinter · MIT · 🪟</sub> | 634 | 2026‑10 | **5** | Windows toast notifications |
+| 28 | [pytube-downloader](https://github.com/thisal-d/pytube-downloader)<br><sub>Python/Tkinter · MIT · 🪟</sub> | 635 | 2026‑10 | **5** | Windows toast notifications |
 | 29 | [VidGrabber](https://github.com/oheyek/VidGrabber)<br><sub>Python/Tkinter · MIT</sub> | 29 | 2026‑10 | **4** |  |
 | 30 | [YT-Forge](https://github.com/Shaikh-Suja-Rahaman/YT-Forge)<br><sub>Electron · MIT</sub> | 27 | 2026‑10 | **4** |  |
 | 31 | [MusicYT-Downloader](https://github.com/taherx7/MusicYT-Downloader)<br><sub>Electron · MIT</sub> | 18 | 2026‑08 | **4** |  |
