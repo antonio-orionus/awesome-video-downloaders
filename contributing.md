@@ -13,6 +13,7 @@ A project is eligible if **all** of the following are true:
 - **Does the downloading itself.** The code that finds, fetches and assembles the media is in the public source and runs on the user's device, or on a server the user hosts. Projects that hand the download to a vendor website or a third-party conversion service are out of scope, even when the client is open source.
 - **No hidden data flows.** It doesn't send browsing history, cookies or account tokens anywhere the user didn't ask for, and it doesn't ask users to weaken browser security (for example by installing a CORS-unblocking extension).
 - **Actively maintained.** A commit, release, or issue response within the last 12 months. Archived or clearly abandoned projects will be removed.
+- **At least 10 stars.** The repo has 10 or more stars (or the equivalent on GitLab, Codeberg and similar hosts) when the pull request is opened. A newer project is welcome back once it gets there.
 - **Working release.** There is a downloadable build, package, or hosted instance that a user can actually run — not just source code with no setup path.
 - **Genuine functionality.** The app must successfully download video or audio at the time of submission. AI-generated repos with no working binary, broken builds, or vapor projects will be rejected.
 - **Not a duplicate.** It does something meaningfully different from existing entries (different platform, different focus, different UX). Yet another minimal yt-dlp GUI without a clear distinction will likely be rejected.
