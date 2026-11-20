@@ -156,6 +156,7 @@ _Desktop apps that ship for at least two of {Windows, macOS, Linux} — Electron
 - [aliencaocao/ytdlp-gui](https://github.com/aliencaocao/ytdlp-gui) - A simple GUI for yt-dlp based on Tkinter, written in pure Python 3.
 - [markop404/media-downloader](https://github.com/markop404/media-downloader) - Web video/audio downloader.
 - [wangzi6224/bili-downloader](https://github.com/wangzi6224/bili-downloader) - Bilibili-focused downloader for videos, collections, anime, courses and favorites, with scheduled uploader subscriptions, AI watermark removal and a local MCP server.
+- [SnowfallHD/vodforge](https://github.com/SnowfallHD/vodforge) - Native Qt desktop app for Windows and macOS that saves YouTube videos and playlists as MP4, MP3 or original audio, with a searchable library and built-in streaming section for your offline archive.
 
 ## Windows-only desktop apps
 
