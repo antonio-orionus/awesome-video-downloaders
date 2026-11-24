@@ -22,18 +22,18 @@ Every cross-platform desktop GUI on the list, ranked by total features (each fea
 
 | # | Project | ⭐ | Pushed | Score | Stands out for |
 |---:|---|---:|---|---:|---|
-| 1 | [omniget](https://github.com/OpenSelena/omniget)<br><sub>Tauri · GPL-3.0 · [original repo gone](#methodology)</sub> | 7k | 2026‑11 | **30** | channel auto-download · Whisper subs · SponsorBlock |
-| 2 | [Arroxy](https://github.com/antonio-orionus/Arroxy)<br><sub>Electron · GPL-3.0 · Winget, Scoop, Homebrew, Flatpak</sub> | 893 | 2026‑11 | **29** | in-app YouTube browser · download profiles · cookie-free PO tokens |
+| 1 | [omniget](https://github.com/OpenSelena/omniget)<br><sub>Tauri · GPL-3.0 · [original repo gone](#methodology)</sub> | 7.2k | 2026‑11 | **30** | channel auto-download · Whisper subs · SponsorBlock |
+| 2 | [Arroxy](https://github.com/antonio-orionus/Arroxy)<br><sub>Electron · GPL-3.0 · Winget, Scoop, Homebrew, Flatpak</sub> | 895 | 2026‑11 | **29** | in-app YouTube browser · download profiles · cookie-free PO tokens |
 | 3 | [youwee](https://github.com/vanloctech/youwee)<br><sub>Tauri · MIT</sub> | 1.7k | 2026‑11 | **24** | RSS auto · Whisper subs · AI summary |
 | 4 | [GDownloader](https://github.com/hstr0100/GDownloader)<br><sub>Java/Swing · GPL-3.0</sub> | 243 | 2026‑11 | **23** | clipboard-first · yt-dlp + gallery-dl + spotDL |
-| 5 | [yt-dlp-gui (imsyy)](https://github.com/imsyy/yt-dlp-gui)<br><sub>Tauri · MIT</sub> | 750 | 2026‑10 | **23** | bilingual subs merge · HDR aware · cookie-free |
+| 5 | [yt-dlp-gui (imsyy)](https://github.com/imsyy/yt-dlp-gui)<br><sub>Tauri · MIT</sub> | 752 | 2026‑10 | **23** | bilingual subs merge · HDR aware · cookie-free |
 | 6 | [YTSage](https://github.com/oop7/YTSage)<br><sub>Python/PySide6 · MIT · PyPI</sub> | 4.7k | 2026‑11 | **22** | pip-installable · EBU R128 audio · HDR aware |
 | 7 | [bili-downloader](https://github.com/wangzi6224/bili-downloader)<br><sub>Electron · MIT</sub> | 10 | 2026‑11 | **21** | Bilibili-only · AI watermark removal · local MCP server |
 | 8 | [neodlp](https://github.com/neosubhamoy/neodlp)<br><sub>Tauri · MIT · Winget, Homebrew, Flathub</sub> | 589 | 2026‑11 | **18** | bundled bgutil-pot · 5/6 auth options · browser extension |
 | 9 | [Parabolic](https://github.com/NickvisionApps/Parabolic)<br><sub>.NET native · MIT · Flathub</sub> | 7.8k | 2026‑11 | **17** | 4-mode subs · GTK4 + WinUI native · batch URL list |
-| 10 | [comine](https://github.com/nichind/comine)<br><sub>Tauri · GPL-3.0 · 🪟🍎🐧🤖</sub> | 225 | 2026‑06 | **16** | Android target · Discord RPC · multi-backend |
+| 10 | [comine](https://github.com/nichind/comine)<br><sub>Tauri · GPL-3.0 · 🪟🍎🐧🤖</sub> | 226 | 2026‑06 | **16** | Android target · Discord RPC · multi-backend |
 | 11 | [ytget-gui](https://github.com/ErfanNamira/ytget-gui)<br><sub>Python/PySide6 · MIT · PyPI</sub> | 51 | 2026‑10 | **16** | pip-installable · retry config · 5/7 download options |
-| 12 | [ytDownloader](https://github.com/aandrew-me/ytDownloader)<br><sub>Electron · GPL-3.0 · Scoop, Winget, Chocolatey</sub> | 10.7k | 2026‑11 | **14** | built-in video compressor |
+| 12 | [ytDownloader](https://github.com/aandrew-me/ytDownloader)<br><sub>Electron · GPL-3.0 · Scoop, Winget, Chocolatey</sub> | 10.8k | 2026‑11 | **14** | built-in video compressor |
 | 13 | [varia](https://github.com/giantpinkrobots/varia)<br><sub>Python/GTK · MPL-2.0 · Flathub, AUR, Snap</sub> | 1.9k | 2026‑11 | **14** | download scheduler · sleep-on-completion · GTK native |
 | 14 | [Pulsar](https://github.com/FuzjaJadrowa/Pulsar)<br><sub>Tauri · GPL-3.0 · Flathub</sub> | 74 | 2026‑11 | **13** | preset system · video converter mode |
 | 15 | [streamfetch](https://github.com/Shripad735/streamfetch)<br><sub>Electron · MIT</sub> | 46 | 2026‑10 | **12** | turbo mode · clip studio |
@@ -44,13 +44,13 @@ Every cross-platform desktop GUI on the list, ranked by total features (each fea
 | 20 | [yt-channel-downloader](https://github.com/hyperfield/yt-channel-downloader)<br><sub>Python/PyQt · MIT · PyPI</sub> | 524 | 2026‑11 | **9** | channel-first UI · size & ETA preview |
 | 21 | [yt-grabber](https://github.com/karenpommeroy/yt-grabber)<br><sub>Electron · MIT</sub> | 16 | 2026‑10 | **8** | GIF generation · 8 themes |
 | 22 | [YouStealD](https://github.com/ivan-an/YouStealD)<br><sub>C++/Qt · MIT · 🪟</sub> | 19 | 2026‑03 | **8** | C++/Qt native · channel webhooks |
-| 23 | [arcdlp](https://github.com/archisvaze/arcdlp)<br><sub>Electron · MIT</sub> | 220 | 2026‑11 | **8** | Instagram saved collections · cookie-mint window |
-| 24 | [ytdlp-gui (aliencaocao)](https://github.com/aliencaocao/ytdlp-gui)<br><sub>Python/Tkinter · none</sub> | 30 | 2026‑10 | **7** | single-file executable |
+| 23 | [arcdlp](https://github.com/archisvaze/arcdlp)<br><sub>Electron · MIT</sub> | 221 | 2026‑11 | **8** | Instagram saved collections · cookie-mint window |
+| 24 | [ytdlp-gui (aliencaocao)](https://github.com/aliencaocao/ytdlp-gui)<br><sub>Python/Tkinter · none</sub> | 30 | 2026‑11 | **7** | single-file executable |
 | 25 | [media-downloader](https://github.com/markop404/media-downloader)<br><sub>Python/PyQt · GPL-3.0 · 🪟🐧 · Flathub, Winget</sub> | 35 | 2026‑11 | **7** | PGP-verified yt-dlp updates |
 | 26 | [Sunder](https://github.com/FrogSnot/Sunder)<br><sub>Tauri · AGPL-3.0 · AUR</sub> | 25 | 2026‑11 | **7** | streaming music player · 10-band EQ |
 | 27 | [YouTube-Downloader](https://github.com/MAymanKH/YouTube-Downloader)<br><sub>Python/Tkinter · none · 🪟🐧</sub> | 126 | 2025‑11 | **6** | YouTube search built in |
 | 28 | [FastDownloader](https://github.com/BERNARDO31P/FastDownloader)<br><sub>Electron · GPL-3.0 · AUR</sub> | 43 | 2026‑11 | **6** | YouTube Premium · YT Music conversion |
-| 29 | [pytube-downloader](https://github.com/thisal-d/pytube-downloader)<br><sub>Python/Tkinter · MIT · 🪟</sub> | 748 | 2026‑11 | **5** | Windows toast notifications |
+| 29 | [pytube-downloader](https://github.com/thisal-d/pytube-downloader)<br><sub>Python/Tkinter · MIT · 🪟</sub> | 754 | 2026‑11 | **5** | Windows toast notifications |
 | 30 | [VidGrabber](https://github.com/oheyek/VidGrabber)<br><sub>Python/Tkinter · MIT</sub> | 29 | 2026‑11 | **4** |  |
 | 31 | [YT-Forge](https://github.com/Shaikh-Suja-Rahaman/YT-Forge)<br><sub>Electron · MIT</sub> | 41 | 2026‑10 | **4** |  |
 | 32 | [MusicYT-Downloader](https://github.com/taherx7/MusicYT-Downloader)<br><sub>Electron · MIT</sub> | 19 | 2026‑08 | **4** |  |
