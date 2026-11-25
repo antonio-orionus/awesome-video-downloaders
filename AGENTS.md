@@ -20,6 +20,6 @@ When a new feature raises an entry's score:
 The board's ⭐ and **Pushed** cells and the license in each Project cell's `<sub>stack · license · …</sub>` line are mechanical snapshots; the feature cells and Score are the manual, audited part.
 
 - ⭐ / Pushed / License: refresh with `python3 scripts/refresh-board-data.py` (`--dry-run` first). A daily GitHub Action (`.github/workflows/refresh-board-data.yml`) runs the same script and commits the diff; a repo it can't fetch fails the run after the other rows are committed. Never touch feature cells or row order here.
-- Feature cells / Score: only change through a re-audit of the project's README/docs/source (clone under `refs/<name>/` for grep checks). After re-auditing a row, append `YYYY-MM-DD — <Project>.` to the **Re-audits** list in the Methodology section. Sort rules above still apply if the score changes.
+- Feature cells / Score: only change through a re-audit of the project's README, docs and source (clone under `refs/<name>/`), judged by the rules in the readme's Methodology section. After re-auditing a row, log it in `audits.md`: a row in the log and the project's line in "Latest audit per row". Sort rules above still apply if the score changes.
 - Blank matrix cells and blank Pushed cells mean "not observed", not "no".
-- Full feature re-audits (READMEs → feature cells → re-rank): use the `reaudit-board` skill (`.opencode/skills/reaudit-board/`) and `scripts/apply-board-audit.py`.
+- Full feature re-audits (source → feature cells → re-rank): use the `reaudit-board` skill (`.opencode/skills/reaudit-board/`) and `scripts/apply-board-audit.py`.
