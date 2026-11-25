@@ -27,32 +27,46 @@ In board order.
 | ytDownloader | 2026-11-25 | Source (`b1696ca`) |
 | YTSage | 2026-11-25 | Source (`f4c1510`) |
 | mediaharbor | 2026-11-25 | Source (`6a02153`) |
+| ezytdl | 2026-11-25 | Source (`3e12deb`) |
 | Pulsar | 2026-11-25 | Source (`3197392`) |
 | vibedownloader-desktop | 2026-11-25 | Source (`4620c9d`) |
+| yt-grabber | 2026-11-25 | Source (`f7bf3a5`) |
 | varia | 2026-11-25 | Source (`fcc91fe`) |
 | streamfetch | 2026-11-25 | Source (`c2a82ea`) |
+| YouStealD | 2026-11-25 | Source (`64c3c75`) |
+| media-downloader | 2026-11-25 | Source (`1e388f7`) |
+| FastDownloader | 2026-11-25 | Source (`fec7981`) |
+| arcdlp | 2026-11-25 | Source (`ee1b41f`) |
+| YT-Forge | 2026-11-25 | Source (`4c3793d`) |
 | cosmo-downloader | 2026-11-25 | Source (`ed09ef3`) |
 | yt-channel-downloader | 2026-11-25 | Source (`f682e60`) |
-| yt-grabber | 2026-05-01 | First compile |
-| YouStealD | 2026-05-01 | First compile |
-| arcdlp | 2026-05-01 | First compile |
-| ytdlp-gui (aliencaocao) | 2026-05-01 | First compile |
-| media-downloader | 2026-05-01 | First compile |
-| Sunder | 2026-05-01 | First compile |
-| YouTube-Downloader | 2026-05-01 | First compile |
-| FastDownloader | 2026-05-01 | First compile |
-| pytube-downloader | 2026-05-01 | First compile |
+| ytdlp-gui (aliencaocao) | 2026-11-25 | Source (`e26967f`) |
+| pytube-downloader | 2026-11-25 | Source (`c501ed5`) |
+| MusicYT-Downloader | 2026-11-25 | Source (`13835fc`) |
+| Sunder | 2026-11-25 | Source (`038efeb`) |
+| YouTube-Downloader | 2026-11-25 | Source (`81dc908`) |
 | avrix-downloader | 2026-11-25 | Source (`22ac3b7`) |
-| VidGrabber | 2026-05-01 | First compile |
-| YT-Forge | 2026-05-01 | First compile |
-| MusicYT-Downloader | 2026-05-01 | First compile |
-| ezytdl | 2026-05-01 | First compile |
-| VidDownloader | 2026-05-01 | First compile |
+| VidGrabber | 2026-11-25 | Source (`24d8f8b`) |
+| VidDownloader | 2026-11-25 | Source (`3003517`) |
 
 ## Log
 
 | Date | Project | Depth | Changes |
 |---|---|---|---|
+| 2026-11-25 | ezytdl | Source (`3e12deb`) | ADD Music services (Spotify links matched to YouTube audio, as spotDL does), Convert / transcode, Trim, Filename templates, Concurrent downloads, Metadata embed, Thumbnail embed, Format picker, HDR (format picker labels dynamic range), Playlists, URL list, Proxy, Custom args, Clipboard watch, System tray, Auto-update yt-dlp (notification with one-click update). Not credited: Browser extension and Cookies from browser (its extension handler looks unwired). 3 → 19. |
+| 2026-11-25 | yt-grabber | Source (`f7bf3a5`) | ADD URL list, Concurrent downloads, Skip downloaded (folder check), Convert / transcode, Filename templates, Custom args, Cookie-free anti-bot (bundled bgutil plugin behind a setting), cookies.txt (loaded from its profile folder). Not credited: Auto-update yt-dlp (a button in Settings only). 8 → 16. |
+| 2026-11-25 | YouStealD | Source (`64c3c75`) | ADD Cookies from browser, Channel / RSS auto (stream monitor), Skip downloaded (`--download-archive`), Auto-update yt-dlp (updates itself after a yt-dlp error), Convert / transcode (`--recode-video`). REMOVE System tray (no tray code). It ships Windows binaries only. 8 → 12. |
+| 2026-11-25 | media-downloader | Source (`1e388f7`) | ADD Playlists, URL list, Auto-retry (its own second pass), Auto-update yt-dlp (at startup), Embed in container. 7 → 12. |
+| 2026-11-25 | FastDownloader | Source (`fec7981`) | ADD Format picker, Concurrent downloads, Thumbnail embed, Auto-retry (its own retry loop), Auto-update yt-dlp. 6 → 11. |
+| 2026-11-25 | arcdlp | Source (`ee1b41f`) | ADD Proxy, Metadata embed, Thumbnail embed. REMOVE Cookies from browser (cookies come only from its own login windows) and Cookie-free anti-bot (only a Deno runtime). Not credited: Auto-update yt-dlp (a button in Settings only). 8 → 9. |
+| 2026-11-25 | YT-Forge | Source (`4c3793d`) | ADD 1000+ sites, Playlists, Convert / transcode (H.264 conversion), In-app sign-in, Cookie-free anti-bot (mints PO tokens itself), Auto-update yt-dlp. REMOVE Thumbnail embed (saved as a separate file). 4 → 9. |
+| 2026-11-25 | ytdlp-gui (aliencaocao) | Source (`e26967f`) | No change; all 7 cells confirmed. |
+| 2026-11-25 | pytube-downloader | Source (`c501ed5`) | ADD Concurrent downloads, Auto-retry. 5 → 7. |
+| 2026-11-25 | MusicYT-Downloader | Source (`13835fc`) | ADD Playlists, Format picker, Convert / transcode (re-encodes to MP3 320k). It hardcodes Windows binaries. 4 → 7. |
+| 2026-11-25 | Sunder | Source (`038efeb`) | ADD Cookies from browser, cookies.txt, Auto-update yt-dlp (one-click update offered when yt-dlp is outdated). REMOVE Auto-retry (the automatic retry is for playback only), Save separate (subtitles become lyrics and the file is deleted), System tray (closing quits the app), Global hotkey (in-window and media keys only). 7 → 6. |
+| 2026-11-25 | YouTube-Downloader | Source (`81dc908`) | REMOVE Thumbnail embed (saved as a separate file), Resume on restart (pause and resume within a session only). 6 → 4. |
+| 2026-11-25 | VidGrabber | Source (`24d8f8b`) | ADD Auto-update yt-dlp (at startup). REMOVE Thumbnail embed (saved as a separate file). 4 → 4. |
+| 2026-11-25 | VidDownloader | Source (`3003517`) | ADD Convert / transcode (ffmpeg WebM to MP4 or MP3). 3 → 4. |
 | 2026-11-25 | ytget-gui | Source (`db2af48`) | ADD Music services and Multi-engine (spotDL as its own downloader), Filename templates (per-site naming rules), URL list (import links from a text file), Custom args, Clipboard watch, Scheduler, System tray. REMOVE Cookie-free anti-bot: only a player-client override and a Deno runtime. 16 → 23. |
 | 2026-11-25 | ytDownloader | Source (`b1696ca`) | ADD Filename templates, Concurrent downloads, URL list (batch mode), System tray, Global hotkey, cookies.txt, Auto-update yt-dlp, Format choice. REMOVE SponsorBlock: only a custom-args example, no setting of its own. 14 → 21. |
 | 2026-11-25 | varia | Source (`fcc91fe`) | ADD Concurrent downloads, Resume on restart (saved state per download, resumed at startup). REMOVE Cookie-free anti-bot: only a Deno runtime. Cookies from browser kept: its own extension reads the browser's cookies. 14 → 15. |
