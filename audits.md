@@ -33,7 +33,6 @@ In board order.
 | yt-grabber | 2026-11-25 | Source (`f7bf3a5`) |
 | varia | 2026-11-25 | Source (`fcc91fe`) |
 | streamfetch | 2026-11-25 | Source (`c2a82ea`) |
-| YouStealD | 2026-11-25 | Source (`64c3c75`) |
 | media-downloader | 2026-11-25 | Source (`1e388f7`) |
 | FastDownloader | 2026-11-25 | Source (`fec7981`) |
 | arcdlp | 2026-11-25 | Source (`ee1b41f`) |
@@ -42,7 +41,6 @@ In board order.
 | yt-channel-downloader | 2026-11-25 | Source (`f682e60`) |
 | ytdlp-gui (aliencaocao) | 2026-11-25 | Source (`e26967f`) |
 | pytube-downloader | 2026-11-25 | Source (`c501ed5`) |
-| MusicYT-Downloader | 2026-11-25 | Source (`13835fc`) |
 | Sunder | 2026-11-25 | Source (`038efeb`) |
 | YouTube-Downloader | 2026-11-25 | Source (`81dc908`) |
 | avrix-downloader | 2026-11-25 | Source (`22ac3b7`) |
@@ -53,6 +51,7 @@ In board order.
 
 | Date | Project | Depth | Changes |
 |---|---|---|---|
+| 2026-11-25 | YouStealD, MusicYT-Downloader | Source | Moved from the board to the Windows-only section: both release Windows installers and zips only and hardcode Windows binaries. The board has 32 rows. |
 | 2026-11-25 | ezytdl | Source (`3e12deb`) | ADD Music services (Spotify links matched to YouTube audio, as spotDL does), Convert / transcode, Trim, Filename templates, Concurrent downloads, Metadata embed, Thumbnail embed, Format picker, HDR (format picker labels dynamic range), Playlists, URL list, Proxy, Custom args, Clipboard watch, System tray, Auto-update yt-dlp (notification with one-click update). Not credited: Browser extension and Cookies from browser (its extension handler looks unwired). 3 → 19. |
 | 2026-11-25 | yt-grabber | Source (`f7bf3a5`) | ADD URL list, Concurrent downloads, Skip downloaded (folder check), Convert / transcode, Filename templates, Custom args, Cookie-free anti-bot (bundled bgutil plugin behind a setting), cookies.txt (loaded from its profile folder). Not credited: Auto-update yt-dlp (a button in Settings only). 8 → 16. |
 | 2026-11-25 | YouStealD | Source (`64c3c75`) | ADD Cookies from browser, Channel / RSS auto (stream monitor), Skip downloaded (`--download-archive`), Auto-update yt-dlp (updates itself after a yt-dlp error), Convert / transcode (`--recode-video`). REMOVE System tray (no tray code). It ships Windows binaries only. 8 → 12. |
