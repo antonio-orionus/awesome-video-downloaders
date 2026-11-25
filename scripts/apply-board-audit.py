@@ -3,10 +3,11 @@
 
 Subcommands:
   status          print each row's currently credited features (input for audit prompts)
-  apply           apply feature additions from a JSON file, re-score, and re-rank
+  apply           apply feature additions and removals from a JSON file, re-score, and re-rank
   verify          check board/matrix alignment, score math, and sort order
 
-adds.json format: {"owner/repo": ["Feature name", ...], ...}
+audit.json format: {"owner/repo": ["Feature name", ...], ...} adds features;
+{"owner/repo": {"add": [...], "remove": [...]}, ...} also removes them.
 Run `apply --dry-run` first; rows are never reordered except by the score rules.
 """
 
@@ -78,23 +79,34 @@ def cmd_status(args):
 
 def cmd_apply(args):
     src, cols, groups = load()
-    adds = json.load(open(args.file, encoding="utf-8"))
+    raw = json.load(open(args.file, encoding="utf-8"))
     mrows = matrix_rows(src)
     brows = board_rows(src)
 
-    for repo, feats in adds.items():
+    edits = {}
+    for repo, spec in raw.items():
         if repo not in mrows:
-            sys.exit(f"unknown repo in adds file: {repo}")
-        for feat in feats:
+            sys.exit(f"unknown repo in audit file: {repo}")
+        spec = {"add": spec} if isinstance(spec, list) else spec
+        if set(spec) - {"add", "remove"}:
+            sys.exit(f"{repo}: only 'add' and 'remove' keys are allowed")
+        edits[repo] = (spec.get("add", []), spec.get("remove", []))
+        for feat in edits[repo][0] + edits[repo][1]:
             if feat not in cols:
                 sys.exit(f"unknown feature {feat!r} for {repo} (valid: {', '.join(cols)})")
+        for feat in edits[repo][0]:
             if mrows[repo][cols.index(feat)] == '✅':
                 sys.exit(f"{repo} already has {feat!r} credited — check the status output first")
+        for feat in edits[repo][1]:
+            if mrows[repo][cols.index(feat)] != '✅':
+                sys.exit(f"{repo} doesn't have {feat!r} credited — nothing to remove")
 
     changed = []
-    for repo, feats in adds.items():
-        for feat in feats:
+    for repo, (add, remove) in edits.items():
+        for feat in add:
             mrows[repo][cols.index(feat)] = '✅'
+        for feat in remove:
+            mrows[repo][cols.index(feat)] = ''
         changed.append(repo)
 
     order = sorted(brows, key=lambda r: (-counts_for(mrows[r], cols, groups)[0], int(brows[r][0])))
@@ -135,7 +147,9 @@ def cmd_apply(args):
     gap = board[len("\n".join(board.splitlines())):]
     src = src.replace(board, "\n".join(out) + gap)
     open(README, "w", encoding="utf-8").write(src)
-    print(f"applied {sum(len(v) for v in adds.values())} feature cell(s) across {len(adds)} repo(s); board re-ranked")
+    n_add = sum(len(a) for a, _ in edits.values())
+    n_rm = sum(len(r) for _, r in edits.values())
+    print(f"added {n_add} and removed {n_rm} feature cell(s) across {len(edits)} repo(s); board re-ranked")
 
 
 def mlines_src(src, repo):
@@ -179,8 +193,8 @@ def main():
     sub = ap.add_subparsers(dest="cmd", required=True)
     s = sub.add_parser("status", help="print current credited features per row")
     s.add_argument("--top", type=int, default=34, help="limit to first N rows")
-    a = sub.add_parser("apply", help="apply additions from a JSON file and re-rank")
-    a.add_argument("file", help="JSON file: {\"owner/repo\": [\"Feature\", ...]}")
+    a = sub.add_parser("apply", help="apply additions and removals from a JSON file and re-rank")
+    a.add_argument("file", help="JSON file: {\"owner/repo\": [\"Feature\", ...]} or {\"owner/repo\": {\"add\": [...], \"remove\": [...]}}")
     a.add_argument("--dry-run", action="store_true", help="show new ranking without writing")
     sub.add_parser("verify", help="check table integrity")
     args = ap.parse_args()
