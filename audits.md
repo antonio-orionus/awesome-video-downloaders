@@ -23,17 +23,16 @@ In board order.
 | bili-downloader | 2026-11-25 | Source (`4206b45`) |
 | neodlp | 2026-11-25 | Source (`7a2d2db`) |
 | Parabolic | 2026-11-25 | Source (`1118e6a`) |
+| ytget-gui | 2026-11-25 | Source (`db2af48`) |
+| ytDownloader | 2026-11-25 | Source (`b1696ca`) |
 | YTSage | 2026-11-25 | Source (`f4c1510`) |
-| ytget-gui | 2026-08-31 | README |
-| ytDownloader | 2026-08-31 | README |
-| varia | 2026-08-31 | README |
-| Pulsar | 2026-08-31 | README |
-| streamfetch | 2026-08-31 | README |
-| mediaharbor | 2026-08-31 | README |
-| vibedownloader-desktop | 2026-08-31 | README |
-| cosmo-downloader | 2026-08-31 | README |
-| avrix-downloader | 2026-08-31 | README |
-| yt-channel-downloader | 2026-08-31 | README |
+| mediaharbor | 2026-11-25 | Source (`6a02153`) |
+| Pulsar | 2026-11-25 | Source (`3197392`) |
+| vibedownloader-desktop | 2026-11-25 | Source (`4620c9d`) |
+| varia | 2026-11-25 | Source (`fcc91fe`) |
+| streamfetch | 2026-11-25 | Source (`c2a82ea`) |
+| cosmo-downloader | 2026-11-25 | Source (`ed09ef3`) |
+| yt-channel-downloader | 2026-11-25 | Source (`f682e60`) |
 | yt-grabber | 2026-05-01 | First compile |
 | YouStealD | 2026-05-01 | First compile |
 | arcdlp | 2026-05-01 | First compile |
@@ -43,6 +42,7 @@ In board order.
 | YouTube-Downloader | 2026-05-01 | First compile |
 | FastDownloader | 2026-05-01 | First compile |
 | pytube-downloader | 2026-05-01 | First compile |
+| avrix-downloader | 2026-11-25 | Source (`22ac3b7`) |
 | VidGrabber | 2026-05-01 | First compile |
 | YT-Forge | 2026-05-01 | First compile |
 | MusicYT-Downloader | 2026-05-01 | First compile |
@@ -53,8 +53,18 @@ In board order.
 
 | Date | Project | Depth | Changes |
 |---|---|---|---|
-| 2026-11-25 | All rows | Source (top 10) | New columns **AI summary** (Quality of life: the app summarizes a video's content with an AI model in its own UI) and **MCP server** (Automation: exposes the app's features to AI agents over the Model Context Protocol). AI summary credited: youwee (AI summary page), omniget (Settings → AI video summaries). MCP server credited: omniget (Tools → AI → MCP server), bili-downloader (local MCP server). Not credited: bili-downloader's AI summary (Bilibili's own summary, passed to AI clients only over MCP); Arroxy's MCP server (behind the unreleased `agentControl` flag). Rows 11–34 stay blank until re-audited. omniget 38 → 40, youwee 32 → 33, bili-downloader 25 → 26. |
-| 2026-11-25 | All rows | Source (top 10, arcdlp) | New column **In-app browser** (Authentication): browse the site signed in inside the app and download from the pages you open. Credited: Arroxy (Explore tab). Added with one project, an exception to the two-project rule. Checked and not credited: the sign-in windows of arcdlp, omniget and bili-downloader close once you're signed in; no other top-10 row opens a window for outside sites. Rows 11–34 stay blank until re-audited. Arroxy 29 → 30. |
+| 2026-11-25 | ytget-gui | Source (`db2af48`) | ADD Music services and Multi-engine (spotDL as its own downloader), Filename templates (per-site naming rules), URL list (import links from a text file), Custom args, Clipboard watch, Scheduler, System tray. REMOVE Cookie-free anti-bot: only a player-client override and a Deno runtime. 16 → 23. |
+| 2026-11-25 | ytDownloader | Source (`b1696ca`) | ADD Filename templates, Concurrent downloads, URL list (batch mode), System tray, Global hotkey, cookies.txt, Auto-update yt-dlp, Format choice. REMOVE SponsorBlock: only a custom-args example, no setting of its own. 14 → 21. |
+| 2026-11-25 | varia | Source (`fcc91fe`) | ADD Concurrent downloads, Resume on restart (saved state per download, resumed at startup). REMOVE Cookie-free anti-bot: only a Deno runtime. Cookies from browser kept: its own extension reads the browser's cookies. 14 → 15. |
+| 2026-11-25 | Pulsar | Source (`3197392`) | ADD SponsorBlock, Concurrent downloads, Filename templates (title constructor), Auto-update yt-dlp (Pulsar-Bridge, its yt-dlp wrapper, updated at startup). 1000+ sites kept: it accepts any URL yt-dlp supports. 13 → 17. |
+| 2026-11-25 | streamfetch | Source (`c2a82ea`) | ADD Auto-update yt-dlp. Resume on restart kept (Resume continues from the partial file); Auto-retry kept (the app re-queues failed jobs with a fallback strategy). 12 → 13. |
+| 2026-11-25 | mediaharbor | Source (`6a02153`) | ADD cookies.txt, Filename templates, Custom args, Skip downloaded (library check), Cookie-free anti-bot (PO-token provider setting), In-app sign-in (Qobuz login window), Multi-engine (votify, gamdl, OrpheusDL). 12 → 19. |
+| 2026-11-25 | vibedownloader-desktop | Source (`4620c9d`) | ADD cookies.txt, Browser extension (its own), Trim, Convert / transcode (built-in editor), Auto-update yt-dlp, Save separate, Format choice. REMOVE 1000+ sites: it accepts nine platforms only. Its lossless Spotify FLAC code is never used, so the board trait changed. 11 → 17. |
+| 2026-11-25 | cosmo-downloader | Source (`ed09ef3`) | ADD Convert / transcode (ffmpeg re-encode with codec and bitrate). REMOVE Thumbnail embed (thumbnail saved as a separate file only), Resume on restart (restored jobs start again from zero), Cookie-free anti-bot (only a Deno runtime). 10 → 8. |
+| 2026-11-25 | avrix-downloader | Source (`22ac3b7`) | REMOVE Playlists (`noplaylist` is always on), Metadata embed and Thumbnail embed (only audio extraction and a thumbnail file), URL list (one URL field), Resume on restart (the queue list only), System tray (no tray code). 10 → 4. |
+| 2026-11-25 | yt-channel-downloader | Source (`f682e60`) | ADD Skip downloaded (skips files already in the download folder). REMOVE Courses (no course platforms), Thumbnail embed (thumbnail saved as a file only). 9 → 8. |
+| 2026-11-25 | All rows | Source (top 10) | New columns **AI summary** (Quality of life: the app summarizes a video's content with an AI model in its own UI) and **MCP server** (Automation: exposes the app's features to AI agents over the Model Context Protocol). AI summary credited: youwee (AI summary page), omniget (Settings → AI video summaries). MCP server credited: omniget (Tools → AI → MCP server), bili-downloader (local MCP server). Not credited: bili-downloader's AI summary (Bilibili's own summary, passed to AI clients only over MCP); Arroxy's MCP server (behind the unreleased `agentControl` flag). Rows without a source audit stay blank until one covers them. omniget 38 → 40, youwee 32 → 33, bili-downloader 25 → 26. |
+| 2026-11-25 | All rows | Source (top 10, arcdlp) | New column **In-app browser** (Authentication): browse the site signed in inside the app and download from the pages you open. Credited: Arroxy (Explore tab). Added with one project, an exception to the two-project rule. Checked and not credited: the sign-in windows of arcdlp, omniget and bili-downloader close once you're signed in; no other top-10 row opens a window for outside sites. Rows without a source audit stay blank until one covers them. Arroxy 29 → 30. |
 | 2026-11-25 | omniget | Source (`9b9072d`) | ADD Multi-engine (gallery-dl, librqbit torrents, direct aria2), Concurrent downloads, Scheduler, Cookies from browser, cookies.txt, In-app sign-in (login window, first-party Courses plugin), Proxy, Custom args (editable per-download yt-dlp command), System tray. REMOVE Embed in container: the README says "embedded or sidecar", but the app never passes `--embed-subs`. 30 → 38. |
 | 2026-11-25 | youwee | Source (`5fed7ac`) | Second pass over the cells not checked for #17. REMOVE Cookie-free anti-bot: no PO-token or bgutil code; only a Deno runtime and player-client options. Not credited: Resume on restart (the saved queue comes back, but downloads start again from zero). 33 → 32. |
 | 2026-11-25 | GDownloader | Source (`9021cbf`) | ADD Concurrent downloads, Skip downloaded (archive and history), Metadata embed, Filename templates (yt-dlp name patterns), Save separate, Format choice, Cookie-free anti-bot (bundled bgutil PO-token provider). Not credited: Global hotkey (a Ctrl+C listener only feeds Clipboard watch). 23 → 30. |
