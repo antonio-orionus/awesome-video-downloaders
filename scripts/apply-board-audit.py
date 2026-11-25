@@ -17,7 +17,7 @@ import re
 import sys
 
 README = "readme.md"
-GROUP_SIZES = [7, 9, 7, 4, 7, 8]
+GROUP_SIZES = [7, 9, 8, 4, 7, 9]
 GROUP_NAMES = ["S", "D", "Q", "Su", "A", "Au"]
 REPO_RE = re.compile(r"github\.com/([\w.-]+/[\w.-]+)")
 
