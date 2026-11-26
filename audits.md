@@ -14,7 +14,8 @@ In board order.
 
 | Project | Last audit | Depth |
 |---|---|---|
-| omniget | 2026-11-25 | Source (`9b9072d`) |
+| omniget | 2026-11-26 | Source (`9e3c424`) |
+| LibreGet | 2026-11-25 | Source (`9b9072d`) |
 | youwee | 2026-11-25 | Source (`5fed7ac`) |
 | GDownloader | 2026-11-25 | Source (`9021cbf`) |
 | Arroxy | 2026-11-25 | Source (`6df64a0`) |
@@ -51,6 +52,8 @@ In board order.
 
 | Date | Project | Depth | Changes |
 |---|---|---|---|
+| 2026-11-26 | omniget | Source (`9e3c424`) | New row for the original, tonhowtf/omniget, back on GitHub since 2026-11-12 after its account suspension. Credited 42: the 40 of LibreGet's row plus Embed in container (the Manifest tracks tool passes `--embed-subs`) and In-app browser (Built-in Browser: headless Chrome streamed into the app window by default, downloads media sniffed from the pages you open). Courses come from first-party connectors (Hotmart, Udemy and others by tonhowtf) in the app's signed catalog. Not credited: Music services, Cookie-free anti-bot (the PO-token provider is an environment variable, with no setting). The board has 33 rows. |
+| 2026-11-26 | LibreGet | — | Renamed from omniget: the row's repo, OpenSelena/omniget, is now OpenSelena/libreget, an independent fork. Features unchanged; checked against `b0a0f33` for the two columns the original gained: no `--embed-subs` and no embedded browser. |
 | 2026-11-25 | YouStealD, MusicYT-Downloader | Source | Moved from the board to the Windows-only section: both release Windows installers and zips only and hardcode Windows binaries. The board has 32 rows. |
 | 2026-11-25 | ezytdl | Source (`3e12deb`) | ADD Music services (Spotify links matched to YouTube audio, as spotDL does), Convert / transcode, Trim, Filename templates, Concurrent downloads, Metadata embed, Thumbnail embed, Format picker, HDR (format picker labels dynamic range), Playlists, URL list, Proxy, Custom args, Clipboard watch, System tray, Auto-update yt-dlp (notification with one-click update). Not credited: Browser extension and Cookies from browser (its extension handler looks unwired). 3 → 19. |
 | 2026-11-25 | yt-grabber | Source (`f7bf3a5`) | ADD URL list, Concurrent downloads, Skip downloaded (folder check), Convert / transcode, Filename templates, Custom args, Cookie-free anti-bot (bundled bgutil plugin behind a setting), cookies.txt (loaded from its profile folder). Not credited: Auto-update yt-dlp (a button in Settings only). 8 → 16. |
