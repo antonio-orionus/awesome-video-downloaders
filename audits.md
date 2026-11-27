@@ -19,12 +19,12 @@ In board order.
 | youwee | 2026-11-25 | Source (`5fed7ac`) |
 | GDownloader | 2026-11-25 | Source (`9021cbf`) |
 | Arroxy | 2026-11-25 | Source (`6df64a0`) |
-| yt-dlp-gui (imsyy) | 2026-11-25 | Source (`e3cd1df`) |
 | comine | 2026-11-25 | Source (`eddb61a`) |
+| yt-dlp-gui (imsyy) | 2026-11-25 | Source (`e3cd1df`) |
 | bili-downloader | 2026-11-25 | Source (`4206b45`) |
+| ytget-gui | 2026-11-25 | Source (`db2af48`) |
 | neodlp | 2026-11-25 | Source (`7a2d2db`) |
 | Parabolic | 2026-11-25 | Source (`1118e6a`) |
-| ytget-gui | 2026-11-25 | Source (`db2af48`) |
 | ytDownloader | 2026-11-25 | Source (`b1696ca`) |
 | YTSage | 2026-11-25 | Source (`f4c1510`) |
 | mediaharbor | 2026-11-25 | Source (`6a02153`) |
@@ -38,8 +38,8 @@ In board order.
 | FastDownloader | 2026-11-25 | Source (`fec7981`) |
 | arcdlp | 2026-11-25 | Source (`ee1b41f`) |
 | YT-Forge | 2026-11-25 | Source (`4c3793d`) |
-| cosmo-downloader | 2026-11-25 | Source (`ed09ef3`) |
 | yt-channel-downloader | 2026-11-25 | Source (`f682e60`) |
+| cosmo-downloader | 2026-11-25 | Source (`ed09ef3`) |
 | ytdlp-gui (aliencaocao) | 2026-11-25 | Source (`e26967f`) |
 | pytube-downloader | 2026-11-25 | Source (`c501ed5`) |
 | Sunder | 2026-11-25 | Source (`038efeb`) |
@@ -52,6 +52,10 @@ In board order.
 
 | Date | Project | Depth | Changes |
 |---|---|---|---|
+| 2026-11-27 | All 33 rows | Source, five columns only (each row's clone at its latest commit) | New group **Processing**: **Convert / transcode** moves into it from Quality of life, beside four new columns, each checked in every row's source. **Hardware encoding**: omniget, LibreGet, GDownloader, comine, ytDownloader, ezytdl, Pulsar, vibedownloader-desktop. **Split by chapters**: omniget, LibreGet, youwee, Parabolic, ytget-gui, yt-grabber, arcdlp. **Embed chapters**: omniget, LibreGet, youwee, GDownloader, Arroxy, yt-dlp-gui (imsyy), comine, bili-downloader, neodlp, Parabolic, ytget-gui, ytDownloader, YTSage, mediaharbor, Pulsar, media-downloader, arcdlp. **Loudness**: omniget, LibreGet, ytget-gui, YTSage. Not credited: bili-downloader's hardware encoders (watermark removal only), YT-Forge (a comment about VideoToolbox, no hardware encoding), old Arroxy's split by chapters (in its yt-dlp bridge, but nothing in the UI turns it on), mediaharbor's ReplayGain (its player reads the tags; nothing writes them), ezytdl's chapters (`--add-metadata` only when it has no FFmpeg of its own). |
+| 2026-11-27 | YouTube-Downloader | Source (`81dc908`) | ADD Convert / transcode: its Advanced Quality Settings window builds an `ffmpeg` re-encode with a codec (H.264, H.265, AV1, MPEG-4), CRF or bitrate, preset and tune (`main.py:618`). |
+| 2026-11-27 | yt-channel-downloader | Source (`f682e60`) | ADD Convert / transcode: for a video format the user picks (MP4, WebM, AVI, MOV, MKV, FLV, 3GP) it copies the streams when they fit and re-encodes when they don't (`media_postprocessors.py`, `VideoContainerPP`). |
+| 2026-11-27 | ytget-gui, mediaharbor | Source (`eb5242c`, `6a02153`) | ADD Format choice: each has a "Convert subtitles to SRT" setting, now in the column rule. bili-downloader and Sunder convert subtitles to one fixed format with no setting, so they stay blank. |
 | 2026-11-26 | omniget | Source (`9e3c424`) | New row for the original, tonhowtf/omniget, back on GitHub since 2026-11-12 after its account suspension. Credited 42: the 40 of LibreGet's row plus Embed in container (the Manifest tracks tool passes `--embed-subs`) and In-app browser (Built-in Browser: headless Chrome streamed into the app window by default, downloads media sniffed from the pages you open). Courses come from first-party connectors (Hotmart, Udemy and others by tonhowtf) in the app's signed catalog. Not credited: Music services, Cookie-free anti-bot (the PO-token provider is an environment variable, with no setting). The board has 33 rows. |
 | 2026-11-26 | LibreGet | — | Renamed from omniget: the row's repo, OpenSelena/omniget, is now OpenSelena/libreget, an independent fork. Features unchanged; checked against `b0a0f33` for the two columns the original gained: no `--embed-subs` and no embedded browser. |
 | 2026-11-25 | YouStealD, MusicYT-Downloader | Source | Moved from the board to the Windows-only section: both release Windows installers and zips only and hardcode Windows binaries. The board has 32 rows. |
